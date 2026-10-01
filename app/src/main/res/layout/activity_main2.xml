@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".MainActivity2">
+
+    <!-- Header / Welcome Banner -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#1E293B"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Haven 👋"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcomeSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Your space to learn, connect, and grow."
+            android:textColor="#94A3B8"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Main Content Area -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Banner / Announcement Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="#6366F1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Community Voice"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Your voice matters. Your story matters. Join community discussions or explore resources today."
+                        android:textColor="#E0E7FF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Quick Actions"
+                android:textColor="#1E293B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- First Button: Explore Dashboard -->
+            <Button
+                android:id="@+id/superButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#2563EB"
+                android:text="Explore Dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp" />
+
+            <!-- Second Button: Sign Out -->
+            <Button
+                android:id="@+id/signOutButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="#EF4444"
+                android:text="Sign Out"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
