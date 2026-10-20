@@ -49,21 +49,31 @@
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/subtitleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Your space to learn, connect, and grow."
-                android:textColor="#757575"
-                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
 
-            <!-- Single Login Button -->
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
             <Button
                 android:id="@+id/superButton"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="#2196F3"
                 android:text="Login"
                 android:textColor="#FFFFFF"
@@ -72,13 +82,14 @@
                 app:cornerRadius="12dp" />
 
             <TextView
-                android:id="@+id/footerTextView"
+                android:id="@+id/registerTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Your voice matters. Your story matters."
-                android:textColor="#9E9E9E"
-                android:textSize="11sp" />
+                android:layout_marginTop="16dp"
+                android:text="Don't have an account? Register"
+                android:textColor="#2196F3"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
